@@ -114,7 +114,7 @@ fi
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/' ~/.zshrc
 
 # Установка Zsh как оболочки по умолчанию
-# chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
 
 # Вход в Zsh
-exec zsh
+# exec zsh
