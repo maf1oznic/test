@@ -117,4 +117,4 @@ sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/' ~/.zshrc
 chsh -s $(which zsh)
 
 # Вход в Zsh
-exec zsh
+# exec zsh
