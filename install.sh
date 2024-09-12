@@ -137,5 +137,13 @@ else
     echo "Oh My Zsh уже установлен."
 fi
 
+# Добавляем запуск Zsh в конец .bashrc
+if ! grep -Fxq "exec zsh" ~/.bashrc; then
+    echo "exec zsh" >> ~/.bashrc
+    echo "Zsh добавлен в .bashrc"
+else
+    echo "Zsh уже добавлен в .bashrc"
+fi
+
 # Установка темы agnoster для Zsh
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/' ~/.zshrc
