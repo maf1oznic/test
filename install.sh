@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -e
+export DEBIAN_FRONTEND=noninteractive
+
 # Проверка наличия установленных пакетов
 check_package() {
     dpkg -s "$1" > /dev/null 2>&1
